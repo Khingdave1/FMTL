@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables starts */
+:root {
+  --primary-color: #019831;
+  --text-color: #202124;
+  --white-color: #ffffff;
+  --grey: #e8eaed;
+  --text-color2: rgba(17, 10, 10, 0.54);
+  --box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+    0 1px 3px 1px rgb(60 64 67 / 15%);
+  --border-radius: 5rem;
+  --border-radius2: 0.5rem;
+}
+/* Variables ends */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: var(--text-color);
+}
+
+/* General starts */
+a {
+  color: var(--text-color);
+}
+button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+input,
+button,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+/* Buttons Starts */
+.btn {
+  display: inline-block;
+  border-radius: var(--border-radius);
+  transition: all 250ms ease-in;
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--border-radius);
+}
+.prim-btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 2px solid transparent;
+}
+.prim-btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.sec-btn {
+  background-color: var(--grey);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+.sec-btn:hover {
+  background-color: var(--white-color);
+}
+/* Buttons ends */
+
+/* Section starts */
+.container {
+  padding: 0 5%;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.sect {
+  padding: 5rem 0;
+}
+@media only screen and (max-width: 870px) {
+  .sect {
+    padding: 3rem 0;
+  }
+}
+.sect-heading h2 {
+  margin-bottom: 1rem;
+}
+/* Section ends */
+
+.clickable {
+  cursor: pointer;
+}
+.uc {
+  text-transform: uppercase;
+}
+/* Headings starts */
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+h3 {
+}
+h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* Headings ends */
