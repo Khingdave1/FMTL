@@ -1,0 +1,53 @@
+h4 {
+  color: #7cbf31;
+  margin-bottom: 2rem;
+}
+h4.fm-text::after {
+  background-color: #7cbf31;
+}
+ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+ul li {
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+ul li:hover {
+  color: #7cbf31;
+  transform: translateX(5px);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 2rem 0;
+  border-top-right-radius: 5rem;
+  /* border-top-left-radius: 5rem; */
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.proj-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-gap: 0.5rem;
+}
+.proj-content a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.contact-details-heading {
+  font-weight: 500;
+}
+.contact-details-heading + p {
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+.contact-details {
+  display: grid;
+  grid-gap: 1rem;
+}

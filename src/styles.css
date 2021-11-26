@@ -1,14 +1,16 @@
 /* Variables starts */
 :root {
-  --primary-color: #019831;
-  --text-color: #202124;
+  --primary-color: #1ead5d;
+  --green-color: #21b44e;
+  --secondary-color: #2f4858;
   --white-color: #ffffff;
-  --grey: #e8eaed;
-  --text-color2: rgba(17, 10, 10, 0.54);
   --box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
     0 1px 3px 1px rgb(60 64 67 / 15%);
-  --border-radius: 5rem;
-  --border-radius2: 0.5rem;
+  --border-radius: 1rem;
+  --fs1: 14px;
+  --fs2: 18px;
+  --fs3: 24px;
+  --fs4: 28px;
 }
 /* Variables ends */
 
@@ -27,12 +29,12 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   position: relative;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 
 /* General starts */
 a {
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 button {
   border: none;
@@ -51,29 +53,53 @@ textarea::placeholder {
 }
 /* Buttons Starts */
 .btn {
+  position: relative;
   display: inline-block;
-  border-radius: var(--border-radius);
-  transition: all 250ms ease-in;
-  padding: 0.5rem 0.8rem;
-  border-radius: var(--border-radius);
+  padding: 1rem 2.2rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  outline: none;
+  transition: all 0.4s;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--primary-color);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.4s;
 }
 .prim-btn {
-  background-color: var(--primary-color);
   color: var(--white-color);
-  border: 2px solid transparent;
-}
-.prim-btn:hover {
-  background-color: var(--white-color);
-  color: var(--primary-color);
+  background-color: transparent;
   border: 2px solid var(--primary-color);
 }
+.prim-btn:hover {
+  color: var(--primary-color);
+}
+.prim-btn::before {
+  width: 100%;
+}
+.prim-btn:hover:before {
+  width: 0;
+}
 .sec-btn {
-  background-color: var(--grey);
+  background: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
 }
 .sec-btn:hover {
-  background-color: var(--white-color);
+  color: var(--white-color);
+}
+.sec-btn::before {
+  width: 0;
+}
+.sec-btn:hover:before {
+  width: 100%;
 }
 /* Buttons ends */
 
@@ -83,12 +109,12 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
   }
 }
 .sect {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 @media only screen and (max-width: 870px) {
   .sect {
@@ -107,11 +133,16 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 /* Headings starts */
+h1 {
+  font-size: 34px;
+}
 h2 {
   font-size: 30px;
   font-weight: 500;
 }
 h3 {
+  font-size: 26px;
+  font-weight: 500;
 }
 h4 {
   font-size: 22px;
@@ -119,6 +150,25 @@ h4 {
 }
 h5 {
   font-size: 18px;
+  font-weight: 500;
+}
+p {
   font-weight: 300;
 }
 /* Headings ends */
+
+/* Global starts */
+.fm-text {
+  position: relative;
+}
+.fm-text::after,
+.active::after {
+  content: "";
+  width: 1.5rem;
+  height: 0.4rem;
+  position: absolute;
+  border-radius: 5px;
+  top: 2.2rem;
+  left: 0;
+}
+/* Global ends */

@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  hamClick: any;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
+  // Open Menu
+  openMenu() {
+    this.hamClick = !this.hamClick
+  }
+
+  // Close Menu
+  closeMenu() {
+    this.hamClick = false
+  }
+
 
 }

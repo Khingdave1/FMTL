@@ -1,1 +1,104 @@
-<p>header works!</p>
+<header>
+  <div class="header-top">
+    <div class="container">
+      <ul class="header-top-connect">
+        <li>
+          <a href="tel: 01-8937402"
+            ><img src="../../../../assets/img/svg/Phone.svg" alt="" />
+            (+234) 01-8937402
+          </a>
+        </li>
+        <li>
+          <img src="../../../../assets/img/svg/lang.svg" alt="" />
+          English
+        </li>
+        <li>
+          <img src="../../../../assets/img/svg/mail.svg" alt="" />
+          Webmail
+        </li>
+      </ul>
+      <ul class="header-top-socials">
+        <li>
+          <a href=""><img src="../../../../assets/img/svg/fb.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="../../../../assets/img/svg/ig.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href=""><img src="../../../../assets/img/svg/tw.svg" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container">
+      <a routerLink="" class="logo">
+        <img src="../../../../assets/img/svg/logo.svg" alt="" />
+      </a>
+      <ul class="nav-list" [class.open-menu]="hamClick">
+        <li
+          class="nav-item"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
+        >
+          Home
+        </li>
+        <li
+          class="nav-item"
+          routerLink="about"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          About Us
+        </li>
+        <li
+          class="nav-item"
+          routerLink="services"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          Services
+        </li>
+        <li
+          class="nav-item"
+          routerLink="team"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          The Team
+        </li>
+        <li
+          class="nav-item"
+          routerLink="tips"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          Life-enrinching Tips
+        </li>
+        <li
+          class="nav-item"
+          routerLink="contact"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          Contact
+        </li>
+        <li class="">
+          <img src="../../../../assets/img/svg/search.svg" alt="" />
+        </li>
+      </ul>
+
+      <!-- Hamburger menu -->
+      <div
+        class="toggle-menu"
+        id="toggle-menu"
+        (click)="openMenu()"
+        [class.open-menu]="hamClick"
+      >
+        <span class="menu-bar"></span>
+      </div>
+    </div>
+  </div>
+</header>

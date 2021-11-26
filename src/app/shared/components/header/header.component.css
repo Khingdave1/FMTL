@@ -1,0 +1,139 @@
+li {
+  cursor: pointer;
+}
+.header-top .container,
+.header-top ul,
+.header-top-connect li,
+.header-top-connect li a,
+.header-bottom .container,
+.header-bottom .nav-list {
+  display: flex;
+  align-items: center;
+}
+/* Header top starts */
+.header-top {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  height: 3rem;
+  background: linear-gradient(
+    143deg,
+    var(--green-color) 50%,
+    var(--secondary-color) calc(50% + 2px)
+  );
+}
+.header-top .container {
+  justify-content: space-between;
+  height: 100%;
+}
+.header-top ul li {
+  font-size: 14px;
+}
+.header-top ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+.header-top ul li a {
+  color: var(--white-color);
+}
+.header-top-connect li img {
+  margin-right: 0.5rem;
+}
+.header-top-socials {
+  z-index: 1;
+}
+/* Header top ends */
+
+/* Header bottom starts */
+.header-bottom {
+  height: 5rem;
+}
+.header-bottom .container {
+  justify-content: space-between;
+  height: 100%;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+}
+.nav-list .nav-item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.nav-list .nav-item {
+  position: relative;
+}
+.nav-list .nav-item.active::after {
+  top: 1.5rem;
+  background-color: var(--primary-color);
+}
+/* Header bottom ends */
+
+/* HamBurger starts */
+.toggle-menu {
+  cursor: pointer;
+  margin-top: -6px;
+  display: none;
+}
+.toggle-menu .menu-bar {
+  width: 1rem;
+  height: 2px;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  position: relative;
+  transform: translateX(-1rem);
+  transition: background-color 0.5s;
+}
+.toggle-menu .menu-bar::before,
+.toggle-menu .menu-bar::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  background-color: inherit;
+  transition: all 0.5s;
+}
+.toggle-menu .menu-bar::before {
+  width: 2rem;
+  top: -0.6rem;
+}
+.toggle-menu .menu-bar::after {
+  width: 2rem;
+  top: 0.6rem;
+}
+.open-menu .menu-bar {
+  background-color: transparent !important;
+}
+.open-menu .menu-bar::before {
+  top: 0 !important;
+  transform: rotate(135deg);
+  background-color: var(--secondary-color) !important;
+}
+.open-menu .menu-bar::after {
+  top: 0 !important;
+  transform: rotate(-135deg);
+  background-color: var(--secondary-color) !important;
+}
+
+/* HamBurger ends */
+
+/* Media query starts */
+@media screen and (max-width: 870px) {
+  .nav-list {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    box-shadow: 0 20px 25px rgba(255, 255, 255, 0.26);
+    transition: 0.5s;
+    z-index: 100;
+    display: grid !important;
+  }
+  .nav-list.open-menu {
+    left: 0;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+/* Media query ends */
