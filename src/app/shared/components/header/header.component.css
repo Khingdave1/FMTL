@@ -40,6 +40,9 @@ li {
 .header-top-socials {
   z-index: 1;
 }
+.header-top-socials .email-mob {
+  display: none;
+}
 /* Header top ends */
 
 /* Header bottom starts */
@@ -115,6 +118,15 @@ li {
 
 /* Media query starts */
 @media screen and (max-width: 870px) {
+  .header-top ul li {
+    font-size: 12px;
+  }
+  .header-top-connect .email-big {
+    display: none;
+  }
+  .header-top-socials .email-mob {
+    display: block;
+  }
   .nav-list {
     position: fixed;
     top: 0px;

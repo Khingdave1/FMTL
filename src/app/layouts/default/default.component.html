@@ -3,3 +3,13 @@
   <router-outlet></router-outlet>
 </main>
 <app-footer></app-footer>
+
+<!-- Back to top -->
+<a
+  class="go-top clickable"
+  id="go-top"
+  (click)="scrollToTop()"
+  [ngClass]="{ show: windowScrolled }"
+>
+  <img src="../../../assets/img/svg/bx-chevron-up.svg" alt="" />
+</a>
