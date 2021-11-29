@@ -1,4 +1,3 @@
-import { DOCUMENT } from '@angular/common';
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
@@ -10,15 +9,15 @@ export class DefaultComponent implements OnInit {
 
   windowScrolled: boolean;
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor() { }
 
-  // When user scroll 100 away from the top of the document
+  // When user scroll 300 away from the top of the document
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       this.windowScrolled = true;
     }
-    else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+    else {
       this.windowScrolled = false;
     }
   }
