@@ -54,26 +54,11 @@
 .services-item p {
   margin: 1.5rem 0 2rem 0;
 }
-.fm-text {
-  color: var(--primary-color);
-}
-.fm-text::after {
-  background-color: var(--primary-color);
-}
 /* Services ends */
 
 /* About starts */
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.about .fm-flex-content {
   flex-direction: row-reverse;
-}
-.about-details {
-  flex-basis: 50%;
-}
-.about-details h3 {
-  margin-bottom: 1.5rem;
 }
 .about-details ul {
   margin: 1.5rem 0 2rem 0;
@@ -87,21 +72,5 @@
 }
 .about-details ul li img {
   margin-right: 1rem;
-}
-.about-img {
-  flex-basis: 40%;
-}
-.about-img img {
-  width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 870px) {
-  .about-content {
-    display: grid;
-    grid-gap: 2rem;
-  }
-  .about-img {
-    /* display: none; */
-  }
 }
 /* About ends */

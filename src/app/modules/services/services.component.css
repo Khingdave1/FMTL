@@ -1,0 +1,24 @@
+.services-card .fm-text::after {
+  background-color: var(--secondary-color);
+}
+
+.fm-flex-content {
+  flex-direction: row-reverse;
+}
+/* .services-details h3 {
+  margin-bottom: 1.5rem;
+} */
+
+.services-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+.services-item {
+  background-color: #e2ffef;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.services-item h5 {
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,46 @@
+/* About Vision Mission starts */
+.about-vm .fm-flex-content {
+  flex-direction: row-reverse;
+}
+.about-vm .fm-flex-details {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+/* About Vision Mission ends */
+
+/* About Asset base starts */
+.about-ab {
+  background-color: #f8fff8;
+}
+.about-ab .fm-flex-content {
+  flex-direction: row;
+}
+.about-ab .fm-flex-details {
+  display: block;
+}
+/* About Asset base ends */
+
+/* about-cv starts */
+.about-cv-card {
+  display: grid;
+  grid-gap: 2rem;
+}
+@media only screen and (min-width: 450px) {
+  .about-cv-card {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+.about-cv-item {
+  display: flex;
+  align-items: center;
+}
+.about-cv-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+}
+.about-cv-item h3 {
+  margin-bottom: 1.5rem;
+}
+/* about-cv ends */
