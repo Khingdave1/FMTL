@@ -1,3 +1,16 @@
+/* .bg {
+  padding: 15rem 0 10rem 0;
+  display: flex;
+  background-image: url("../../../assets/img/about/Rectangle31.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: -5rem;
+}
+.bg div {
+  margin: auto;
+  color: var(--white-color);
+} */
+
 /* About Vision Mission starts */
 .about-vm .fm-flex-content {
   flex-direction: row-reverse;
@@ -20,7 +33,7 @@
 }
 /* About Asset base ends */
 
-/* about-cv starts */
+/* about Core Value starts */
 .about-cv-card {
   display: grid;
   grid-gap: 2rem;
@@ -43,4 +56,4 @@
 .about-cv-item h3 {
   margin-bottom: 1.5rem;
 }
-/* about-cv ends */
+/* about Core Value ends */

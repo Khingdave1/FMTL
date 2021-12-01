@@ -13,12 +13,50 @@ const routes: Routes = [
     path: '',
     component: DefaultComponent,
     children: [
-      { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'services', component: ServicesComponent },
-      { path: 'team', component: TeamComponent },
-      { path: 'tips', component: TipsComponent },
-      { path: 'contact', component: ContactComponent },
+      {
+        path: '',
+        component: HomeComponent,
+        data: {
+          title: 'Home',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
+        data: {
+          title: 'About',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'services',
+        component: ServicesComponent,
+        data: {
+          title: 'Services',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'team',
+        component: TeamComponent,
+        data: {
+          title: 'Team',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'tips',
+        component: TipsComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+        data: {
+          title: 'Contact',
+          description: 'Description Meta Tag Content'
+        }
+      },
     ]
   }
 ];
