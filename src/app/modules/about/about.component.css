@@ -10,6 +10,13 @@
   margin: auto;
   color: var(--white-color);
 } */
+.bg-image {
+  background-image: url("../../../assets/img/about/Rectangle31.png");
+}
+.yes {
+  margin: auto;
+  color: var(--white-color);
+}
 
 /* About Vision Mission starts */
 .about-vm .fm-flex-content {

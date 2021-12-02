@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesComponent implements OnInit {
 
+  isActive: boolean = true;
+  bgImage = 'url("assets/img/services/Rectangle31.png")';
+
   constructor() { }
 
   ngOnInit(): void {
