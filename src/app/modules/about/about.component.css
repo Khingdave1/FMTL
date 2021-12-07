@@ -1,23 +1,3 @@
-/* .bg {
-  padding: 15rem 0 10rem 0;
-  display: flex;
-  background-image: url("../../../assets/img/about/Rectangle31.png");
-  background-position: center;
-  background-size: cover;
-  margin-top: -5rem;
-}
-.bg div {
-  margin: auto;
-  color: var(--white-color);
-} */
-.bg-image {
-  background-image: url("../../../assets/img/about/Rectangle31.png");
-}
-.yes {
-  margin: auto;
-  color: var(--white-color);
-}
-
 /* About Vision Mission starts */
 .about-vm .fm-flex-content {
   flex-direction: row-reverse;

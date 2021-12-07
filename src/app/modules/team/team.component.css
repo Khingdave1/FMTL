@@ -1,0 +1,37 @@
+.team .fm-text {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+.team .fm-text::after {
+  background-color: var(--secondary-color);
+}
+.team .team-card {
+  display: grid;
+  grid-gap: 2rem;
+}
+@media only screen and (min-width: 450px) {
+  .team .team-card {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+.team-item {
+  text-align: center;
+}
+.team-item .profile-pic {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.team-item .name {
+  text-transform: uppercase;
+}
+.team-item p {
+  margin: 1rem 0 0.5rem 0;
+}
+.team-item .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+.team-item .social-icons img:not(:last-child) {
+  margin-right: 1rem;
+}

@@ -1,11 +1,3 @@
-.bg-image {
-  background-image: url("../../../assets/img/services/Rectangle31.png");
-}
-.yes {
-  margin: auto;
-  color: var(--white-color);
-}
-
 .services-card .fm-text::after {
   background-color: var(--secondary-color);
 }

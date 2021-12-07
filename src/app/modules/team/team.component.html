@@ -1,2 +1,74 @@
 <!-- Header -->
-<app-header></app-header>
+<app-header [isActive]="isActive" [bgImage]="bgImage">
+  <div class="header-hero-content">
+    <h1>Board of Directors & Management</h1>
+  </div>
+</app-header>
+
+<!-- Meet the Board of Directors -->
+<section class="team sect">
+  <div class="container">
+    <h3 class="fm-text">Meet the Board of Directors</h3>
+    <div class="team-card">
+      <div class="team-item" *ngFor="let item of boardMembers">
+        <img [src]="item.image" alt="image" class="profile-pic" />
+        <h5 class="name">{{ item.name }}</h5>
+        <p>{{ item.role }}</p>
+        <div class="social-icons">
+          <a [href]="item.facebook"></a
+          ><img
+            src="../../../assets/img/svg/fb_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+          <a [href]="item.instagram"></a
+          ><img
+            src="../../../assets/img/svg/ig_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+          <a [href]="item.twitter"></a
+          ><img
+            src="../../../assets/img/svg/tw_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Management Team -->
+<section class="team sect">
+  <div class="container">
+    <h3 class="fm-text">Meet the Management Team</h3>
+    <div class="team-card">
+      <div class="team-item" *ngFor="let item of ManagementMembers">
+        <img [src]="item.image" alt="image" class="profile-pic" />
+        <h5 class="name">{{ item.name }}</h5>
+        <p>{{ item.role }}</p>
+        <div class="social-icons">
+          <a [href]="item.facebook"></a
+          ><img
+            src="../../../assets/img/svg/fb_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+          <a [href]="item.instagram"></a
+          ><img
+            src="../../../assets/img/svg/ig_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+          <a [href]="item.twitter"></a
+          ><img
+            src="../../../assets/img/svg/tw_dark.svg"
+            alt="svg"
+            class="clickable"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
