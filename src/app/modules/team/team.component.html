@@ -11,7 +11,9 @@
     <h3 class="fm-text">Meet the Board of Directors</h3>
     <div class="team-card">
       <div class="team-item" *ngFor="let item of boardMembers">
-        <img [src]="item.image" alt="image" class="profile-pic" />
+        <a [href]="item.image"
+          ><img [src]="item.image" alt="image" class="profile-pic clickable"
+        /></a>
         <h5 class="name">{{ item.name }}</h5>
         <p>{{ item.role }}</p>
         <div class="social-icons">
@@ -45,7 +47,9 @@
     <h3 class="fm-text">Meet the Management Team</h3>
     <div class="team-card">
       <div class="team-item" *ngFor="let item of ManagementMembers">
-        <img [src]="item.image" alt="image" class="profile-pic" />
+        <a [href]="item.image"
+          ><img [src]="item.image" alt="image" class="profile-pic clickable"
+        /></a>
         <h5 class="name">{{ item.name }}</h5>
         <p>{{ item.role }}</p>
         <div class="social-icons">

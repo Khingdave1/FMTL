@@ -1,1 +1,90 @@
-<p>contact works!</p>
+<!-- Header -->
+<app-header [isActive]="isActive" [bgImage]="bgImage">
+  <div class="header-hero-content">
+    <h1>Contact Us</h1>
+  </div>
+</app-header>
+
+<section class="contact sect">
+  <div class="container">
+    <!-- Form Area -->
+    <div class="contact-form-area">
+      <h3 class="fm-text">Contact Us</h3>
+      <form class="contact-form">
+        <div class="form-field name">
+          <label for="">Name</label>
+          <input type="text" />
+        </div>
+        <div class="form-field email">
+          <label for="">E-mail Address</label>
+          <input type="email" />
+        </div>
+        <div class="form-field subject">
+          <label for="">Subject</label>
+          <input type="text" />
+        </div>
+        <div class="form-field message">
+          <label for="">Message</label>
+          <textarea name="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-submit">
+          <button class="btn prim-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <hr class="hr" />
+
+    <!-- Information -->
+    <div class="contact-info">
+      <h3 class="fm-text">Contact Information</h3>
+      <div class="contact-info-content">
+        <div class="contact-info-item address">
+          <h5>Address</h5>
+          <span>Main office: </span>
+          <address>
+            <a href="#map"
+              >16 Balarabe Musa Crescent Off Samuel Manuwa Road, Victoria Island
+              Lagos</a
+            >
+          </address>
+        </div>
+        <div class="contact-info-item number">
+          <h5>Phone Number</h5>
+          <p>
+            <a href="tel: 0809 086 5708">(+234) 809 086 5708</a>
+          </p>
+        </div>
+        <div class="contact-info-item email">
+          <h5>E-mail Address</h5>
+          <p>
+            <a href="mailto: info@firstmarinatrust.com"
+              >info@firstmarinatrust.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-item whistle">
+          <h5>Whistle Blowing</h5>
+          <p>
+            <a href="mailto: whistle-blowing@firstmarinatrust.com"
+              >whistle-blowing@firstmarinatrust.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="sect" id="map">
+  <div class="container">
+    <iframe
+      class="embedGoogleMap"
+      width="100%"
+      height="300"
+      style="border: 0px solid #000000"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6634564781007!2d3.4353568140765307!3d6.437251795342749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5205ec74dbf%3A0xb9ea32dd5e8cad92!2s16%20Balarabe%20Musa%20Cres%2C%20Victoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1579090628371!5m2!1sen!2sng"
+    ></iframe>
+  </div>
+</section>

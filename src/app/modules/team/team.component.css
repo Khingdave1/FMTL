@@ -5,6 +5,7 @@
 .team .fm-text::after {
   background-color: var(--secondary-color);
 }
+
 .team .team-card {
   display: grid;
   grid-gap: 2rem;
