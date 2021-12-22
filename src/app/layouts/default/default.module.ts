@@ -5,10 +5,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { DefaultComponent } from './default.component';
 import { HomeComponent } from 'src/app/modules/home/home.component';
 import { AboutComponent } from 'src/app/modules/about/about.component';
-import { ServicesComponent } from 'src/app/modules/services/services.component';
-import { TeamComponent } from 'src/app/modules/team/team.component';
-import { TipsComponent } from 'src/app/modules/tips/tips.component';
 import { ContactComponent } from 'src/app/modules/contact/contact.component';
+import { FinanceComponent } from 'src/app/modules/finance/finance.component';
+import { ProjectsComponent } from 'src/app/modules/projects/projects.component';
+import { InvestmentsComponent } from 'src/app/modules/investments/investments.component';
+import { TeamComponent } from 'src/app/modules/team/team.component';
 
 
 
@@ -16,11 +17,12 @@ import { ContactComponent } from 'src/app/modules/contact/contact.component';
   declarations: [
     DefaultComponent,
     HomeComponent,
+    FinanceComponent,
+    ProjectsComponent,
+    InvestmentsComponent,
     AboutComponent,
-    ServicesComponent,
-    TeamComponent,
-    TipsComponent,
-    ContactComponent
+    ContactComponent,
+    TeamComponent
   ],
   imports: [
     CommonModule,
@@ -30,11 +32,12 @@ import { ContactComponent } from 'src/app/modules/contact/contact.component';
   exports: [
     DefaultComponent,
     HomeComponent,
+    FinanceComponent,
+    ProjectsComponent,
+    InvestmentsComponent,
     AboutComponent,
-    ServicesComponent,
-    TeamComponent,
-    TipsComponent,
-    ContactComponent
+    ContactComponent,
+    TeamComponent
   ]
 })
 export class DefaultModule { }

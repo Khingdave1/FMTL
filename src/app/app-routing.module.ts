@@ -4,9 +4,10 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { AboutComponent } from './modules/about/about.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
-import { ServicesComponent } from './modules/services/services.component';
-import { TeamComponent } from './modules/team/team.component';
-import { TipsComponent } from './modules/tips/tips.component';
+
+import { FinanceComponent } from './modules/finance/finance.component';
+import { ProjectsComponent } from './modules/projects/projects.component';
+import { InvestmentsComponent } from './modules/investments/investments.component';
 
 const routes: Routes = [
   {
@@ -22,32 +23,36 @@ const routes: Routes = [
         }
       },
       {
+        path: 'finance',
+        component: FinanceComponent,
+        data: {
+          title: 'Finance',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'projects',
+        component: ProjectsComponent,
+        data: {
+          title: 'Projects',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
+        path: 'investments',
+        component: InvestmentsComponent,
+        data: {
+          title: 'Investments',
+          description: 'Description Meta Tag Content'
+        }
+      },
+      {
         path: 'about',
         component: AboutComponent,
         data: {
           title: 'About',
           description: 'Description Meta Tag Content'
         }
-      },
-      {
-        path: 'services',
-        component: ServicesComponent,
-        data: {
-          title: 'Services',
-          description: 'Description Meta Tag Content'
-        }
-      },
-      {
-        path: 'team',
-        component: TeamComponent,
-        data: {
-          title: 'Team',
-          description: 'Description Meta Tag Content'
-        }
-      },
-      {
-        path: 'tips',
-        component: TipsComponent
       },
       {
         path: 'contact',

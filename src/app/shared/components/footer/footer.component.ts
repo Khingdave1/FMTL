@@ -7,12 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  portfolios = [
-    { src: '../../../../assets/img/1.png' },
-    { src: '../../../../assets/img/2.png' },
-    { src: '../../../../assets/img/3.png' }
-  ]
-
   constructor() { }
 
   ngOnInit(): void {

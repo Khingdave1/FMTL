@@ -1,15 +1,13 @@
 /* Hero Starts */
-.hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hero {
+  background-image: url("../../../assets/img/Slider_One_Bg.png");
+  background-position: center;
+  background-size: cover;
+  color: var(--white-color);
+  padding: 5rem 0;
 }
 .hero-details {
-  flex-basis: 55%;
   animation: slideIn 2s cubic-bezier(0.5, 0, 0, 1);
-}
-.hero-details h5 {
-  color: var(--primary-color);
 }
 .hero-details h1 {
   margin: 1rem 0;
@@ -19,49 +17,9 @@
   margin-top: 1rem;
   animation: slideIn 3s cubic-bezier(0.5, 0, 0, 1);
 }
-.hero-img {
-  flex-basis: 40%;
-}
-.hero-img img {
-  width: 100%;
-  height: auto;
-}
-@media only screen and (max-width: 870px) {
-  .hero-content {
-    display: grid;
-    grid-gap: 2rem;
-  }
-  .hero-img {
-    display: none;
-  }
-}
 /* Hero ends */
 
-/* Services starts */
-.services {
-  background-color: #f8fff8;
-}
-.services-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-}
-.services-item img {
-  width: 100%;
-  height: 261px;
-  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-  /* 379 × 261 px */
-  margin-bottom: 1rem;
-}
-.services-item p {
-  margin: 1.5rem 0 2rem 0;
-}
-/* Services ends */
-
 /* About starts */
-.about .fm-flex-content {
-  flex-direction: row-reverse;
-}
 .about-details ul {
   margin: 1.5rem 0 2rem 0;
 }
@@ -75,7 +33,49 @@
 .about-details ul li img {
   margin-right: 1rem;
 }
+
 /* About ends */
+
+.save {
+  background-image: url("../../../assets/img/bg-vector.svg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+/* App-download starts */
+.app-download {
+  background-image: url("../../../assets/img/Group_26.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+}
+.app-download .container {
+  padding: 5rem 0;
+  text-align: center;
+}
+.app-download p {
+  margin: 1.5rem 0 2rem 0;
+}
+.app-download .btn {
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+}
+
+/* App-download ends */
+
+/* Media queries starts */
+@media only screen and (min-width: 870px) {
+  .hero-details {
+    width: 60%;
+  }
+  .app-download .container {
+    width: 50%;
+    margin: auto;
+  }
+}
+/* Media queries ends */
 
 /* Keyframes */
 @keyframes slideIn {

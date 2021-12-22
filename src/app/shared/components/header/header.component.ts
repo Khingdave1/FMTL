@@ -8,15 +8,42 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   hamClick: any;
-  @Input() isActive: boolean;
-  @Input() bgImage: string;
-  bgImage1 = "../../../../assets/img/svg/logo.svg"
+
+  navLink: any = [
+    {
+      name: "Finance",
+      link: "/finance",
+      subLinks: []
+    },
+    {
+      name: "Projects",
+      link: "/projects",
+      subLinks: []
+    },
+    {
+      name: "Investments",
+      link: "/investments",
+      subLinks: []
+    },
+    {
+      name: "About Us",
+      link: "/about",
+      subLinks: [
+        { name: "Our Mission and Vision" },
+        { name: "Board of Directors" },
+        { name: "Management" }
+      ]
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      subLinks: []
+    }
+  ]
 
   constructor() { }
 
   ngOnInit(): void {
-
-    console.log(this.bgImage)
   }
 
 

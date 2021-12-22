@@ -6,6 +6,12 @@
   background-color: var(--secondary-color);
 }
 
+/* Header hero starts */
+.hero-area {
+  background-image: url("../../../assets/img/contact/Rectangle31.png");
+}
+/* Header hero ends */
+
 .contact .container {
   display: flex;
   justify-content: space-between;

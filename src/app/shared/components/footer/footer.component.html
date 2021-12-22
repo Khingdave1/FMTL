@@ -1,5 +1,6 @@
 <footer>
   <div class="container">
+    <!-- ABout -->
     <div class="about">
       <h4 class="fm-text">Who are we</h4>
       <p>
@@ -10,56 +11,58 @@
         Presently, our asset base is over N12 billion.
       </p>
     </div>
+
+    <!-- Posts -->
     <div class="posts">
       <h4 class="fm-text">Popular Posts</h4>
       <ul>
         <!-- <li>Who we are</li> -->
         <li routerLink="/about">About our company</li>
-        <li>Our latest news</li>
         <li routerLink="/services">Our services</li>
+        <li>
+          <a
+            href="http://www.forbes.com/sites/celinnedacosta/2016/08/31/how-changing-your-definition-of-success-makes-you-successful/#599b37333e73"
+            >Life-enriching tips</a
+          >
+        </li>
       </ul>
     </div>
-    <div class="proj">
-      <h4 class="fm-text">Project Porfolio</h4>
-      <div class="proj-content">
-        <a [href]="i.src" *ngFor="let i of portfolios">
-          <img [src]="i.src" alt="image" />
-        </a>
-        <a href="">
-          <img src="../../../../assets/img/3.png" alt="image" />
-        </a>
-        <a href="">
-          <img src="../../../../assets/img/2.png" alt="image" />
-        </a>
-        <a href="">
-          <img src="../../../../assets/img/3.png" alt="image" />
-        </a>
-        <!-- <a href="">
-          <img src="../../../../assets/img/2.png" alt="image" />
-        </a>
-        <a href="">
-          <img src="../../../../assets/img/1.png" alt="image" />
-        </a> -->
-      </div>
-    </div>
+
+    <!-- Contact -->
     <div class="contact">
       <h4 class="fm-text">Conatct Us</h4>
       <div class="contact-details">
         <div>
-          <p class="contact-details-heading">Address</p>
           <p>
             First Marina Trust Limited, 16 Balarabe Musa Crescent Off Samuel
             Manuwa Road, Victoria Island Lagos
           </p>
         </div>
         <div>
-          <p class="contact-details-heading">Phone Number</p>
           <p>(+234) 809 086 5708</p>
         </div>
         <div>
-          <p class="contact-details-heading">E-mail Address</p>
           <p>info@firstmarinatrust.com</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Socials -->
+    <div class="social">
+      <h4 class="fm-text">Social</h4>
+      <div class="social-content">
+        <a href="">
+          <img src="../../../../assets/img/svg/ft-fb.svg" alt="image" />
+        </a>
+        <a href="">
+          <img src="../../../../assets/img/svg/ft-li.svg" alt="image" />
+        </a>
+        <a href="">
+          <img src="../../../../assets/img/svg/ft-tw.svg" alt="image" />
+        </a>
+        <a href="">
+          <img src="../../../../assets/img/svg/ft-ig.svg" alt="image" />
+        </a>
       </div>
     </div>
   </div>

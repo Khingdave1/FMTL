@@ -1,7 +1,10 @@
-/* About Vision Mission starts */
-.about-vm .fm-flex-content {
-  flex-direction: row-reverse;
+/* Header hero starts */
+.hero-area {
+  background-image: url("../../../assets/img/about/Rectangle31.png");
 }
+/* Header hero ends */
+
+/* About Vision Mission starts */
 .about-vm .fm-flex-details {
   display: grid;
   grid-gap: 1.5rem;

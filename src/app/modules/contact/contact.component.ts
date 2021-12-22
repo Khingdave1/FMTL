@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  isActive: boolean = true;
-  bgImage = 'url("assets/img/contact/Rectangle31.png")';
-
   constructor() { }
 
   ngOnInit(): void {

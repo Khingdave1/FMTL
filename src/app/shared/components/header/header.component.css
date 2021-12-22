@@ -17,7 +17,7 @@ li {
   height: 3rem;
   background: linear-gradient(
     143deg,
-    var(--green-color) 50%,
+    var(--primary-color) 50%,
     var(--secondary-color) calc(50% + 2px)
   );
 }
@@ -46,16 +46,12 @@ li {
 /* Header top ends */
 
 /* Header bottom starts */
-.header-bottom {
-  background-position: center;
-  background-size: cover;
-}
 .header-bottom .container {
   justify-content: space-between;
-  height: 4rem;
+  height: 5rem;
 }
 .logo img {
-  width: 150px;
+  width: 200px;
   height: auto;
 }
 .logo img.filter {
@@ -71,24 +67,44 @@ li {
   top: 1.5rem;
   background-color: var(--primary-color);
 }
-/* Header bottom ends */
 
-/* Header Hero starts */
-.header-hero {
-  padding: 10rem 5%;
+/* Drop down starts */
+.drop-down {
   display: none;
 }
-.header-hero.show {
-  display: flex;
+.nav-item:hover .drop-down {
+  display: block;
 }
-.header-hero div {
-  margin: auto;
+.drop-down li a {
   color: var(--white-color);
 }
-.white-color {
-  color: var(--white-color);
+@media screen and (min-width: 870px) {
+  .drop-down {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    min-width: 180px;
+    border: 1px solid var(--green-color);
+    background-color: var(--white-color);
+    z-index: 100;
+  }
+  .drop-down li {
+    padding: 0.5rem;
+    font-size: 14px;
+    border-bottom: 2px solid var(--grey-color);
+  }
+  .drop-down li a {
+    display: inline-block;
+    color: var(--secondary-color);
+    transition: 0.2s all ease-in;
+  }
+  .drop-down li a:hover {
+    color: var(--green-color);
+    transform: translateX(5px);
+  }
 }
-/* Header Hero ends */
+/* Drop down ends */
+/* Header bottom ends */
 
 /* HamBurger starts */
 .toggle-menu {
@@ -104,9 +120,6 @@ li {
   position: relative;
   transform: translateX(-1rem);
   transition: background-color 0.5s;
-}
-.toggle-menu .menu-bar.white-color {
-  background-color: var(--white-color);
 }
 .toggle-menu .menu-bar::before,
 .toggle-menu .menu-bar::after {
@@ -136,10 +149,6 @@ li {
   top: 0 !important;
   transform: rotate(-135deg);
   background-color: var(--secondary-color) !important;
-}
-.open-menu .menu-bar.white-color::before,
-.open-menu .menu-bar.white-color::after {
-  background-color: var(--white-color) !important;
 }
 
 /* HamBurger ends */

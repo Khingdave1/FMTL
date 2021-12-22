@@ -44,71 +44,27 @@
   </div>
 
   <!-- Header Bottom -->
-  <div class="header-bottom" [ngStyle]="{ 'background-image': bgImage }">
+  <div class="header-bottom">
     <div class="container">
       <span routerLink="/" class="logo clickable">
-        <img
-          src="../../../../assets/img/svg/logo.svg"
-          alt="image"
-          [class.filter]="isActive"
-        />
+        <img src="../../../../assets/img/svg/logo.svg" alt="image" />
       </span>
-      <ul
-        class="nav-list"
-        [class.open-menu]="hamClick"
-        [class.white-color]="isActive"
-      >
+      <ul class="nav-list" [class.open-menu]="hamClick">
         <li
+          *ngFor="let i of navLink"
           class="nav-item"
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          (click)="closeMenu()"
-        >
-          Home
-        </li>
-        <li
-          class="nav-item"
-          routerLink="/about"
+          [routerLink]="i.link"
           routerLinkActive="active"
           (click)="closeMenu()"
         >
-          About Us
-        </li>
-        <li
-          class="nav-item"
-          routerLink="/services"
-          routerLinkActive="active"
-          (click)="closeMenu()"
-        >
-          Services
-        </li>
-        <li
-          class="nav-item"
-          routerLink="/team"
-          routerLinkActive="active"
-          (click)="closeMenu()"
-        >
-          The Team
-        </li>
-        <li
-          class="nav-item"
-          routerLink="tips"
-          routerLinkActive="active"
-          (click)="closeMenu()"
-        >
-          Life-enrinching Tips
-        </li>
-        <li
-          class="nav-item"
-          routerLink="/contact"
-          routerLinkActive="active"
-          (click)="closeMenu()"
-        >
-          Contact
-        </li>
-        <li class="">
-          <img src="../../../../assets/img/svg/search.svg" alt="image" />
+          {{ i.name }}
+
+          <!-- Drop down -->
+          <ul class="drop-down" *ngIf="i.subLinks != ''">
+            <li *ngFor="let child of i.subLinks">
+              <a href="">{{ child.name }}</a>
+            </li>
+          </ul>
         </li>
       </ul>
 
@@ -118,14 +74,7 @@
         (click)="openMenu()"
         [class.open-menu]="hamClick"
       >
-        <span class="menu-bar" [class.white-color]="isActive"></span>
-      </div>
-    </div>
-
-    <!-- Header Hero -->
-    <div class="header-hero" [class.show]="isActive">
-      <div>
-        <ng-content select=".header-hero-content"></ng-content>
+        <span class="menu-bar"></span>
       </div>
     </div>
   </div>

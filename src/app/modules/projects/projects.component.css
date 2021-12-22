@@ -1,0 +1,24 @@
+.hero-area {
+  background-image: url("../../../assets/img/projects/Rectangle_27.png");
+}
+
+/* Services starts */
+.services {
+  background-color: #f8fff8;
+}
+.services-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+.services-item img {
+  width: 100%;
+  height: 261px;
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+  /* 379 × 261 px */
+  margin-bottom: 1rem;
+}
+.services-item p {
+  margin: 1.5rem 0 2rem 0;
+}
+/* Services ends */
