@@ -29,9 +29,18 @@ export class HeaderComponent implements OnInit {
       name: "About Us",
       link: "/about",
       subLinks: [
-        { name: "Our Mission and Vision" },
-        { name: "Board of Directors" },
-        { name: "Management" }
+        {
+          name: "Our Mission and Vision",
+          link: ""
+        },
+        {
+          name: "Board of Directors",
+          link: "/about"
+        },
+        {
+          name: "Management",
+          link: "/about"
+        }
       ]
     },
     {

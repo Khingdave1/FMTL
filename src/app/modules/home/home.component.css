@@ -1,6 +1,5 @@
 /* Hero Starts */
 .hero {
-  background-image: url("../../../assets/img/Slider_One_Bg.png");
   background-position: center;
   background-size: cover;
   color: var(--white-color);

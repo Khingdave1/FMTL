@@ -14,8 +14,10 @@
           English
         </li> -->
         <li class="email-big">
-          <img src="../../../../assets/img/svg/mail.svg" alt="image" />
-          Webmail
+          <a href="mailto: info@firstmarinatrust.com">
+            <img src="../../../../assets/img/svg/mail.svg" alt="image" />
+            Webmail
+          </a>
         </li>
       </ul>
       <ul class="header-top-socials">
@@ -61,8 +63,8 @@
 
           <!-- Drop down -->
           <ul class="drop-down" *ngIf="i.subLinks != ''">
-            <li *ngFor="let child of i.subLinks">
-              <a href="">{{ child.name }}</a>
+            <li class="sub-nav-item" *ngFor="let child of i.subLinks">
+              <a [href]="child.link">{{ child.name }}</a>
             </li>
           </ul>
         </li>

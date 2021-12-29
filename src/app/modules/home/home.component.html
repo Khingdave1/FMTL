@@ -1,5 +1,5 @@
 <!-- hero -->
-<section class="hero">
+<section class="hero" [ngStyle]="{ 'background-image': bgImage }">
   <div class="container hero-content">
     <div class="hero-details">
       <h5 class="uc">Welcome to first marina</h5>
@@ -13,7 +13,7 @@
         Papers, which is due to the continuous confidence we have enjoyed from
         our numerous customers.
       </p>
-      <button href="#" class="btn prim-btn">Read More</button>
+      <button routerLink="/about" class="btn prim-btn">Read More</button>
     </div>
   </div>
 </section>
@@ -51,10 +51,10 @@
           <p>Employee Friendly Environment</p>
         </li>
       </ul>
-      <button class="btn prim-btn">Read More</button>
+      <button routerLink="/about" class="btn prim-btn">Read More</button>
     </div>
     <div class="fm-flex-img">
-      <img src="../../../assets/img/home/4.png" alt="image" />
+      <img src="../../../assets/img/home/Group13.png" alt="image" />
     </div>
   </div>
 </section>
@@ -75,10 +75,7 @@
       <button class="btn prim-btn">Get started</button>
     </div>
     <div class="fm-flex-img">
-      <img
-        src="../../../assets/img/Lifesavers_Using_Computer.svg"
-        alt="image"
-      />
+      <img src="../../../assets/img/home/Group19.png" alt="image" />
     </div>
   </div>
 </section>
@@ -95,7 +92,7 @@
       <button class="btn sec-btn">Save Now</button>
     </div>
     <div class="fm-flex-img">
-      <img src="../../../assets/img/Mask_Group.svg" alt="image" />
+      <img src="../../../assets/img/home/Group51.png" alt="image" />
     </div>
   </div>
 </section>
