@@ -4,7 +4,6 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { AboutComponent } from './modules/about/about.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
-
 import { FinanceComponent } from './modules/finance/finance.component';
 import { ProjectsComponent } from './modules/projects/projects.component';
 import { InvestmentsComponent } from './modules/investments/investments.component';

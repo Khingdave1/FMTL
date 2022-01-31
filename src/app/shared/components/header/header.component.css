@@ -58,9 +58,6 @@ li {
   width: 200px;
   height: auto;
 }
-.logo img.filter {
-  filter: brightness(10);
-}
 .nav-list .nav-item {
   line-height: 5rem;
 }
