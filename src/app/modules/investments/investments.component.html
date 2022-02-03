@@ -5,38 +5,26 @@
   </div>
 </div>
 
-<section class="sect">
-  <div class="container fm-flex-content">
-    <div class="fm-flex-details">
-      <h2 class="fm-text fm-sect-text">Best Investments Company</h2>
-      <p class="paragh">
-        We have several products in our investment portfolio such as Money
-        Market instruments, Investment in Blue-chip companies and other viable
-        products. We also operate in the Venture Capital sphere.
-      </p>
-      <button class="btn prim-btn">Get Started</button>
+<ng-container *ngIf="content?.length > 0; else noContent">
+  <section class="sect" *ngFor="let i of content">
+    <div class="container fm-flex-content">
+      <div class="fm-flex-details">
+        <h2 class="fm-text fm-sect-text">{{ i.name }}</h2>
+        <p class="paragh">
+          {{ i.description }}
+        </p>
+        <button class="btn sec-btn">Get Started</button>
+      </div>
+      <div class="fm-flex-img">
+        <picture class="fm-flex-img-border" *ngFor="let childItem of i.images">
+          <img [src]="childItem.url" alt="image" />
+        </picture>
+      </div>
     </div>
-    <div class="fm-flex-img">
-      <img src="../../../assets/img/investments/Group56.png" alt="" />
-    </div>
-  </div>
-</section>
+  </section>
+</ng-container>
 
-<section class="sect">
-  <div class="container fm-flex-content row-reverse">
-    <div class="fm-flex-details">
-      <h2 class="fm-text fm-sect-text">
-        Investing right with <span class="gc">First Marina</span>
-      </h2>
-      <p class="paragh">
-        At First Marina, we are concerned about our clients satisfaction about
-        investing with us. We provide the best investments plans across the
-        globe.
-      </p>
-      <button class="btn sec-btn">Get Started</button>
-    </div>
-    <div class="fm-flex-img">
-      <img src="../../../assets/img/investments/Group57.png" alt="" />
-    </div>
-  </div>
-</section>
+<!-- If the List is empty -->
+<ng-template #noContent>
+  <p style="text-align: center; font-weight: 500">Loading!</p>
+</ng-template>

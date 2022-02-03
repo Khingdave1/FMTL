@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PagesService } from 'src/app/services/pages.service';
 
 @Component({
   selector: 'app-finance',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinanceComponent implements OnInit {
 
-  constructor() { }
+  content: any;
+
+  constructor(private pagesService: PagesService) { }
 
   ngOnInit(): void {
+    // Get Pojects data
+    this.getProjectsData()
+  }
+
+  // Get Projects Data
+  getProjectsData() {
+    this.pagesService.getAllPages().subscribe((res: any) => {
+      this.content = res.data.finance
+    }, ((error: any) => {
+      console.log(error)
+    }))
   }
 
 }

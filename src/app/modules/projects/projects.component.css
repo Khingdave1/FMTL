@@ -2,23 +2,39 @@
   background-image: url("../../../assets/img/projects/Rectangle_27.png");
 }
 
-/* Services starts */
-.services {
+/* projects starts */
+.projects {
   background-color: #f8fff8;
 }
-.services-card {
+.projects-card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem;
 }
-.services-item img {
+@media only screen and (min-width: 450px) {
+  .projects-card {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+.projects-item img {
   width: 100%;
   height: 261px;
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
   /* 379 × 261 px */
   margin-bottom: 1rem;
 }
-.services-item p {
-  margin: 1.5rem 0 2rem 0;
+.projects-item p {
+  margin: 1.5rem 0 0.5rem 0;
 }
-/* Services ends */
+/* projects ends */
+
+.tert-btn {
+  display: inline-block;
+  color: var(--tertiary-color);
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: 0.2s all ease-in;
+}
+.tert-btn:hover {
+  color: var(--secondary-color);
+  transform: translateX(5px);
+}

@@ -27,7 +27,7 @@ import { TeamComponent } from 'src/app/modules/team/team.component';
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule,
+    SharedModule
   ],
   exports: [
     DefaultComponent,

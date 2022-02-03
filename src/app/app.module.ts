@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { DefaultModule } from './layouts/default/default.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     DefaultModule
   ],
   providers: [],

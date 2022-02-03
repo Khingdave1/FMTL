@@ -5,38 +5,26 @@
   </div>
 </div>
 
-<section class="sect">
-  <div class="container fm-flex-content">
-    <div class="fm-flex-details">
-      <h2 class="fm-text fm-sect-text">
-        Best <span class="gc">Financial</span> Specialist
-      </h2>
-      <p class="paragh">
-        We specialize in financing Local Purchasing Order, Working Capital
-        requirements, Import Finance.
-      </p>
-      <button class="btn prim-btn">Get Started</button>
+<ng-container *ngIf="content?.length > 0; else noContent">
+  <section class="sect" *ngFor="let i of content">
+    <div class="container fm-flex-content">
+      <div class="fm-flex-details">
+        <h2 class="fm-text fm-sect-text">{{ i.name }}</h2>
+        <p class="paragh">
+          {{ i.description }}
+        </p>
+        <button class="btn sec-btn">Get Started</button>
+      </div>
+      <div class="fm-flex-img">
+        <picture class="fm-flex-img-border" *ngFor="let childItem of i.images">
+          <img [src]="childItem.url" alt="image" />
+        </picture>
+      </div>
     </div>
-    <div class="fm-flex-img">
-      <img src="../../../assets/img/finance/Group52.png" alt="" />
-    </div>
-  </div>
-</section>
+  </section>
+</ng-container>
 
-<section class="sect">
-  <div class="container fm-flex-content row-reverse">
-    <div class="fm-flex-details">
-      <h2 class="fm-text fm-sect-text">Financial Advisory</h2>
-      <p class="paragh">
-        We have developed expertise in Financial Advisory for individuals,
-        corporations and governments which want to play in emerging markets. Our
-        Financial Advisory Services extends to Corporate Finance and Structured
-        Finance Solutions.
-      </p>
-      <button class="btn sec-btn">Get Started</button>
-    </div>
-    <div class="fm-flex-img">
-      <img src="../../../assets/img/finance/Group53.png" alt="" />
-    </div>
-  </div>
-</section>
+<!-- If the List is empty -->
+<ng-template #noContent>
+  <p style="text-align: center; font-weight: 500">Loading!</p>
+</ng-template>
