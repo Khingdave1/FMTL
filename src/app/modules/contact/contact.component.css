@@ -65,7 +65,18 @@
 .contact-form-area .form-field textarea {
   resize: none;
 }
-
+.contact-form-area .submit-message {
+  display: none;
+}
+.contact-form-area .submit-message.show {
+  display: block;
+}
+.contact-form-area .submit-message.green-color {
+  color: #008000;
+}
+.contact-form-area .submit-message.red-color {
+  color: #ff2e00;
+}
 .contact-info .contact-info-item.whistle {
   margin-top: 1.5rem;
 }

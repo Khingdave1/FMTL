@@ -10,6 +10,7 @@ import { FinanceComponent } from 'src/app/modules/finance/finance.component';
 import { ProjectsComponent } from 'src/app/modules/projects/projects.component';
 import { InvestmentsComponent } from 'src/app/modules/investments/investments.component';
 import { TeamComponent } from 'src/app/modules/team/team.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,9 @@ import { TeamComponent } from 'src/app/modules/team/team.component';
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     DefaultComponent,
